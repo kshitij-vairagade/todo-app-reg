@@ -1,4 +1,3 @@
-import Button from "@restart/ui/esm/Button";
 import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,7 +28,7 @@ const SignIn = (props) => {
             <Card className="text-center">
               <Card.Header>
                 {" "}
-                <FcTodoList className="list-icon" /> To-Do List{" "}
+                <FcTodoList className="list-icon" /> To-Do List With User Registration{" "}
               </Card.Header>
 
               <Card.Body>
@@ -65,7 +64,7 @@ const SignIn = (props) => {
 
                   <Button onClick={login} type="submit" className="login">
                     <IoIosLogIn className="lock" />
-                    Login
+                    SignIn
                   </Button>
 
                   <br></br>

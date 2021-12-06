@@ -1,0 +1,70 @@
+.logout {
+    width: fit-content !important;
+  }
+  
+  .navbar-brand {
+    text-transform: uppercase;
+    color: rgb(65, 16, 94) !important;
+    font-weight: bold;
+  }
+  
+  nav {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  
+  .add {
+    border-radius: 100% !important;
+    float: right;
+    margin-right: 10px;
+    font-size: large !important;
+    background-color: rgb(37, 100, 116) !important;
+    border-color: rgb(37, 100, 116) !important;
+  }
+  
+  h6 {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  h5 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .delete {
+    float: right;
+    color: rgb(37, 100, 116) !important;
+  }
+  
+  .todo-card {
+    background-color: rgb(171, 169, 173) !important;
+    color: white !important;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  
+  .view {
+    color: rgb(84, 158, 177) !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    font-size: small !important;
+  }
+  
+  .title {
+    text-transform: uppercase;
+    font-size: medium !important;
+    color: rgb(37, 100, 116) !important;
+  }
+  
+  .addImg {
+    font-size: x-large;
+    z-index: 100;
+    margin-top: 20px;
+    margin-left: -25px;
+    position: fixed;
+    color: black;
+  }

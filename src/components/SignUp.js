@@ -8,13 +8,13 @@ import { IoIosLogIn } from "react-icons/io";
 import { FcTodoList } from "react-icons/fc";
 
 const SignUp = (props) => {
-    const [name, setUsername] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+  const [name, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <>
@@ -28,7 +28,7 @@ const SignUp = (props) => {
               <Card className="text-center">
                 <Card.Header>
                   <FcTodoList className="list-icon" />
-                  ToDo List
+                  ToDo List With User Registration
                 </Card.Header>
                 <Card.Body>
                   <Form onSubmit={(e) => handleSubmit(e)}>
@@ -96,14 +96,13 @@ const SignUp = (props) => {
   );
 
   async function onRegister() {
-      try{
-          await firebase.register(name, email, password);
-          props.history.replace("/dashboard");
-      } catch(error){
-            alert(error.message);
-        }
+    try {
+      await firebase.register(name, email, password);
+      props.history.replace("/dashboard");
+    } catch (error) {
+      alert(error.message);
     }
+  }
 };
 
 export default withRouter(SignUp);
-

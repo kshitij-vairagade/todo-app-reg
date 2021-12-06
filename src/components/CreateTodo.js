@@ -1,11 +1,16 @@
-import React from "react";
-import { Form } from "react-bootstrap";
+import React, { useState } from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import { withRouter } from "react-router-dom";
 import { FcTodoList } from "react-icons/fc";
+import firebase from "../firebase";
+import "./Form.css";
 
 const CreateTodo = (props) => {
   const [formObject, setFormObject] = useState({});
 
-  const handleChange = (e) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormObject({ ...formObject, [name]: value });
   };
@@ -31,7 +36,7 @@ const CreateTodo = (props) => {
                 <FcTodoList className="list-icon" />
                 To-Do List With User Registration
               </Card.Header>
-              
+
               <Card.Body>
                 <Form onSubmit={addTodo}>
                   <Form.Label>Add Title</Form.Label>

@@ -1,9 +1,9 @@
-import app from "firebase/app";
-import { config } from "../config";
+import app from "firebase/compat/app";
+import firebaseConfig from "./firebaseConfig";
 
 class Firebase {
   constructor() {
-    app.initializeApp(config);
+    app.initializeApp(firebaseConfig);
     this.auth = app.auth();
     this.db = app.firebase();
     this.storage = app.storage();
