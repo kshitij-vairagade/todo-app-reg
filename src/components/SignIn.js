@@ -78,6 +78,16 @@ const SignIn = (props) => {
                       <p>Or</p>
                     </div>
                   </div>
+
+                  <Button
+                    onClick={signInWithGoogle}
+                    className="g-btn"
+                    variant="primary"
+                    type="submit"
+                  >
+                    <FcGoogle className="google" />
+                    Sign In with Google
+                  </Button>
                 </Form>
               </Card.Body>
 
